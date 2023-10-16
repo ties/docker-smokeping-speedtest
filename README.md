@@ -1,6 +1,13 @@
 A fork of the linuxserver.io [smokeping container](https://github.com/linuxserver/docker-smokeping)
 with the [speedtest probe](https://github.com/mad-ady/smokeping-speedtest) installed.
 
+Run the container with
+```
+docker run --rm ghcr.io/ties/docker-smokeping-speedtest:latest
+```
+
+## Configuration
+
 Configure it by adding the probe in `Probes` and then adding an instance in `Targets.
 You can get the nearest servers (and I personally pick one near an internet exchange)
 by running `speedtest-cli --list | head` in the container.
