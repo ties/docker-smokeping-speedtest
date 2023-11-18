@@ -3,7 +3,7 @@ with the [speedtest probe](https://github.com/mad-ady/smokeping-speedtest) insta
 
 Run the container with
 ```
-docker run --rm ghcr.io/ties/docker-smokeping-speedtest:latest
+docker run -p 8080:80 --rm ghcr.io/ties/docker-smokeping-speedtest:latest
 ```
 
 ## Configuration
